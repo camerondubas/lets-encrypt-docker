@@ -10,7 +10,7 @@ docker run -it --rm \
 	-p 80:80 -p 443:443 \
 	-e DOMAINS="example.com www.example.com" \
 	-v $(pwd)/out:/etc/letsencrypt \
-	mujz/lets-encrypt
+	mujz/lets-encrypt-docker
 ```
 
 You'll be asked to enter your email address and agree to the terms of service next. The cert files will then be generated for you inside the `out` directory. Make sure you set your own domains instead of the "example" ones. 
